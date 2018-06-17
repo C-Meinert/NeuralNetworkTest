@@ -24,11 +24,20 @@ namespace NeuralNetworkTest.Utilities
         }
 
         ///<summary>
-        /// Pseudo random numbder
+        /// Pseudo random number
         ///</summary>
         public static double PseudoRandomNumber()
         {
             Random r = new Random();
+            return r.NextDouble();
+        }
+
+        ///<summary>
+        /// Pseudo random number
+        ///</summary>
+        public static double PseudoRandomNumber(int seed)
+        {
+            Random r = new Random(seed);
             return r.NextDouble();
         }
     }

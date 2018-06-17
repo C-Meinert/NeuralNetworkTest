@@ -3,13 +3,19 @@ using System.Collections.Generic;
 
 namespace NeuralNetworkTest.NeuralNetwork
 {
+    ///<summary>
+    /// The layer acts as a container for neurons
+    ///</summary>
     public class Layer
     {
-        public List<Neuron> Nodes {get; set;}
+        public List<Neuron> Neurons { get; set; }
 
-        public Layer()
+        ///<summary>
+        /// Constructor
+        ///</summary>
+        public Layer(int numNeurons)
         {
-            Nodes = new List<Neuron>();
+            Neurons = new List<Neuron>(numNeurons);
         }
     }
 }

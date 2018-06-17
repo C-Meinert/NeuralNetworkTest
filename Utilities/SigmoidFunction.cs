@@ -8,7 +8,7 @@ namespace NeuralNetworkTest.Utilities
     public class SigmoidFunction
     {
         ///<summary>
-        /// Logistic Function
+        /// Binary Logistic Function
         ///</summary>
         public static double logistic(double x)
         {
@@ -16,7 +16,7 @@ namespace NeuralNetworkTest.Utilities
         }
 
         ///<summary>
-        /// Hyperbolic Tangent function
+        /// Binary Hyperbolic Tangent function
         ///</summary>
         public static double hyperbolic(double x)
         {
@@ -24,7 +24,7 @@ namespace NeuralNetworkTest.Utilities
         }
 
         ///<summary>
-        /// Arctangent function
+        /// Binary Arctangent function
         ///</summary>
         public static double arctangent(double x)
         {
@@ -32,11 +32,11 @@ namespace NeuralNetworkTest.Utilities
         }
 
         ///<summary>
-        /// Error Function
+        /// Bipolar function
         ///</summary>
-        public static double error(double x)
+        public static double bipolar(double x)
         {
-            throw new NotImplementedException();
+            return ((1 - Math.Exp(x) / 1 + Math.Exp(x)));
         }
     }
 }
